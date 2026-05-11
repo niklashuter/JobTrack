@@ -91,3 +91,4 @@
 /Users/niklashuter/Documents/Projekte/JobTrack/obj/Debug/net8.0/JobTrack.pdb
 /Users/niklashuter/Documents/Projekte/JobTrack/obj/Debug/net8.0/JobTrack.genruntimeconfig.cache
 /Users/niklashuter/Documents/Projekte/JobTrack/obj/Debug/net8.0/ref/JobTrack.dll
+/Users/niklashuter/Documents/Projekte/JobTrack/obj/Debug/net8.0/JobTrack.sourcelink.json
