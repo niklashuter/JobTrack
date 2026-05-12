@@ -1,3 +1,5 @@
+using System;
+
 namespace JobTrack.Models;
 
 public class JobApplication

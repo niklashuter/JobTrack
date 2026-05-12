@@ -1,24 +1,21 @@
-﻿using Avalonia;
-using System;
+﻿using System;
+using JobTrack.Data;
 
-namespace JobTrack;
+Console.WriteLine("Starte Datenbank...");
 
-sealed class Program
+using var db = new AppDbContext();
+
+db.Database.EnsureCreated();
+
+var application = new JobTrack.Models.JobApplication
 {
-    // Initialization code. Don't use any Avalonia, third-party APIs or any
-    // SynchronizationContext-reliant code before AppMain is called: things aren't initialized
-    // yet and stuff might break.
-    [STAThread]
-    public static void Main(string[] args) => BuildAvaloniaApp()
-        .StartWithClassicDesktopLifetime(args);
+    CompanyName = "ExampleAG",
+    Position = "Junior Software Developer",
+    Status = "Offen",
+    Notes = "TestBewerbung"
+};
 
-    // Avalonia configuration, don't remove; also used by visual designer.
-    public static AppBuilder BuildAvaloniaApp()
-        => AppBuilder.Configure<App>()
-            .UsePlatformDetect()
-#if DEBUG
-            .WithDeveloperTools()
-#endif
-            .WithInterFont()
-            .LogToTrace();
-}
+db.JobApplications.Add(application);
+db.SaveChanges();
+
+Console.WriteLine("Datenbank erstellt oder bereits vorhanden.");
