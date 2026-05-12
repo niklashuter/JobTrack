@@ -1,3 +1,11 @@
+/Users/niklashuter/Documents/Projekte/JobTrack/obj/Debug/net8.0/JobTrack.csproj.AssemblyReference.cache
+/Users/niklashuter/Documents/Projekte/JobTrack/obj/Debug/net8.0/Avalonia/Resources.Inputs.cache
+/Users/niklashuter/Documents/Projekte/JobTrack/obj/Debug/net8.0/Avalonia/resources
+/Users/niklashuter/Documents/Projekte/JobTrack/obj/Debug/net8.0/JobTrack.GeneratedMSBuildEditorConfig.editorconfig
+/Users/niklashuter/Documents/Projekte/JobTrack/obj/Debug/net8.0/JobTrack.AssemblyInfoInputs.cache
+/Users/niklashuter/Documents/Projekte/JobTrack/obj/Debug/net8.0/JobTrack.AssemblyInfo.cs
+/Users/niklashuter/Documents/Projekte/JobTrack/obj/Debug/net8.0/JobTrack.csproj.CoreCompileInputs.cache
+/Users/niklashuter/Documents/Projekte/JobTrack/obj/Debug/net8.0/JobTrack.sourcelink.json
 /Users/niklashuter/Documents/Projekte/JobTrack/bin/Debug/net8.0/JobTrack
 /Users/niklashuter/Documents/Projekte/JobTrack/bin/Debug/net8.0/JobTrack.deps.json
 /Users/niklashuter/Documents/Projekte/JobTrack/bin/Debug/net8.0/JobTrack.runtimeconfig.json
@@ -185,14 +193,6 @@
 /Users/niklashuter/Documents/Projekte/JobTrack/bin/Debug/net8.0/runtimes/win-arm64/native/e_sqlite3.dll
 /Users/niklashuter/Documents/Projekte/JobTrack/bin/Debug/net8.0/runtimes/win-x64/native/e_sqlite3.dll
 /Users/niklashuter/Documents/Projekte/JobTrack/bin/Debug/net8.0/runtimes/win-x86/native/e_sqlite3.dll
-/Users/niklashuter/Documents/Projekte/JobTrack/obj/Debug/net8.0/JobTrack.csproj.AssemblyReference.cache
-/Users/niklashuter/Documents/Projekte/JobTrack/obj/Debug/net8.0/Avalonia/Resources.Inputs.cache
-/Users/niklashuter/Documents/Projekte/JobTrack/obj/Debug/net8.0/Avalonia/resources
-/Users/niklashuter/Documents/Projekte/JobTrack/obj/Debug/net8.0/JobTrack.GeneratedMSBuildEditorConfig.editorconfig
-/Users/niklashuter/Documents/Projekte/JobTrack/obj/Debug/net8.0/JobTrack.AssemblyInfoInputs.cache
-/Users/niklashuter/Documents/Projekte/JobTrack/obj/Debug/net8.0/JobTrack.AssemblyInfo.cs
-/Users/niklashuter/Documents/Projekte/JobTrack/obj/Debug/net8.0/JobTrack.csproj.CoreCompileInputs.cache
-/Users/niklashuter/Documents/Projekte/JobTrack/obj/Debug/net8.0/JobTrack.sourcelink.json
 /Users/niklashuter/Documents/Projekte/JobTrack/obj/Debug/net8.0/JobTrack.csproj.Up2Date
 /Users/niklashuter/Documents/Projekte/JobTrack/obj/Debug/net8.0/JobTrack.dll
 /Users/niklashuter/Documents/Projekte/JobTrack/obj/Debug/net8.0/refint/JobTrack.dll

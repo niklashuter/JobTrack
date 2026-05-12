@@ -1,4 +1,5 @@
-﻿using System.Collections.ObjectModel;
+﻿using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using JobTrack.Data;
 using JobTrack.Models;
@@ -12,6 +13,19 @@ public class MainWindowViewModel
     // Eingabefelder
     public string NewCompanyName { get; set; } = "";
     public string NewPosition { get; set; } = "";
+
+    // Verfügbare Statuswerte
+    public List<string> StatusOptions { get; } = new()
+    {
+        "Offen",
+        "Bewerbung gesendet",
+        "Interview",
+        "Angebot erhalten",
+        "Abgelehnt"
+    };
+
+    // Ausgewählter Status
+    public string SelectedStatus { get; set; } = "Offen";
 
     public MainWindowViewModel()
     {
@@ -33,7 +47,6 @@ public class MainWindowViewModel
 
     public void SaveApplication()
     {
-        // Verhindert leere Eingaben
         if (string.IsNullOrWhiteSpace(NewCompanyName) ||
             string.IsNullOrWhiteSpace(NewPosition))
         {
@@ -46,18 +59,18 @@ public class MainWindowViewModel
         {
             CompanyName = NewCompanyName,
             Position = NewPosition,
-            Status = "Offen",
+            Status = SelectedStatus,
             Notes = ""
         };
 
         db.JobApplications.Add(application);
         db.SaveChanges();
 
-        // Eingabefelder leeren
+        // Eingabefelder zurücksetzen
         NewCompanyName = "";
         NewPosition = "";
+        SelectedStatus = "Offen";
 
-        // Liste neu laden
         LoadApplications();
     }
 }
