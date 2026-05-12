@@ -18,4 +18,12 @@ var application = new JobTrack.Models.JobApplication
 db.JobApplications.Add(application);
 db.SaveChanges();
 
+foreach (var job in db.JobApplications)
+{
+    Console.WriteLine($"Firma: {job.CompanyName}");
+    Console.WriteLine($"Position: {job.Position}");
+    Console.WriteLine($"Status: {job.Status}");
+    Console.WriteLine("----------------------------");
+}
+
 Console.WriteLine("Datenbank erstellt oder bereits vorhanden.");
