@@ -14,6 +14,7 @@
 /Users/niklashuter/.nuget/packages/avalonia/12.0.3/ref/net8.0/Avalonia.MicroCom.dll
 /Users/niklashuter/.nuget/packages/avalonia.native/12.0.3/lib/net8.0/Avalonia.Native.dll
 /Users/niklashuter/.nuget/packages/avalonia/12.0.3/ref/net8.0/Avalonia.OpenGL.dll
+/Users/niklashuter/.nuget/packages/avalonia.reactiveui/11.3.8/lib/net8.0/Avalonia.ReactiveUI.dll
 /Users/niklashuter/.nuget/packages/avalonia.remote.protocol/12.0.3/lib/net8.0/Avalonia.Remote.Protocol.dll
 /Users/niklashuter/.nuget/packages/avalonia.skia/12.0.3/lib/net8.0/Avalonia.Skia.dll
 /Users/niklashuter/.nuget/packages/avalonia.themes.fluent/12.0.3/lib/net8.0/Avalonia.Themes.Fluent.dll
@@ -23,6 +24,7 @@
 /Users/niklashuter/.nuget/packages/avalonia.x11/12.0.3/lib/net8.0/Avalonia.X11.dll
 /Users/niklashuter/.nuget/packages/avaloniaui.diagnosticssupport/2.2.1/lib/net8.0/AvaloniaUI.DiagnosticsSupport.Avalonia.dll
 /Users/niklashuter/.nuget/packages/communitytoolkit.mvvm/8.4.1/lib/net8.0/CommunityToolkit.Mvvm.dll
+/Users/niklashuter/.nuget/packages/dynamicdata/8.4.1/lib/net8.0/DynamicData.dll
 /Users/niklashuter/.nuget/packages/harfbuzzsharp/8.3.1.3/lib/net8.0/HarfBuzzSharp.dll
 /Users/niklashuter/.nuget/packages/microcom.runtime/0.11.4/lib/net5.0/MicroCom.Runtime.dll
 /usr/local/share/dotnet/packs/Microsoft.NETCore.App.Ref/8.0.26/ref/net8.0/Microsoft.CSharp.dll
@@ -48,7 +50,9 @@
 /usr/local/share/dotnet/packs/Microsoft.NETCore.App.Ref/8.0.26/ref/net8.0/Microsoft.Win32.Registry.dll
 /usr/local/share/dotnet/packs/Microsoft.NETCore.App.Ref/8.0.26/ref/net8.0/mscorlib.dll
 /usr/local/share/dotnet/packs/Microsoft.NETCore.App.Ref/8.0.26/ref/net8.0/netstandard.dll
+/Users/niklashuter/.nuget/packages/reactiveui/20.1.1/lib/net8.0/ReactiveUI.dll
 /Users/niklashuter/.nuget/packages/skiasharp/3.119.4-preview.1.1/ref/net6.0/SkiaSharp.dll
+/Users/niklashuter/.nuget/packages/splat/15.1.1/lib/net8.0/Splat.dll
 /Users/niklashuter/.nuget/packages/sqlitepclraw.bundle_e_sqlite3/2.1.6/lib/netstandard2.0/SQLitePCLRaw.batteries_v2.dll
 /Users/niklashuter/.nuget/packages/sqlitepclraw.core/2.1.6/lib/netstandard2.0/SQLitePCLRaw.core.dll
 /Users/niklashuter/.nuget/packages/sqlitepclraw.provider.e_sqlite3/2.1.6/lib/net6.0/SQLitePCLRaw.provider.e_sqlite3.dll
@@ -133,6 +137,7 @@
 /usr/local/share/dotnet/packs/Microsoft.NETCore.App.Ref/8.0.26/ref/net8.0/System.Numerics.dll
 /usr/local/share/dotnet/packs/Microsoft.NETCore.App.Ref/8.0.26/ref/net8.0/System.Numerics.Vectors.dll
 /usr/local/share/dotnet/packs/Microsoft.NETCore.App.Ref/8.0.26/ref/net8.0/System.ObjectModel.dll
+/Users/niklashuter/.nuget/packages/system.reactive/6.0.1/lib/net6.0/System.Reactive.dll
 /usr/local/share/dotnet/packs/Microsoft.NETCore.App.Ref/8.0.26/ref/net8.0/System.Reflection.DispatchProxy.dll
 /usr/local/share/dotnet/packs/Microsoft.NETCore.App.Ref/8.0.26/ref/net8.0/System.Reflection.dll
 /usr/local/share/dotnet/packs/Microsoft.NETCore.App.Ref/8.0.26/ref/net8.0/System.Reflection.Emit.dll

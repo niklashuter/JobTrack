@@ -1,20 +1,54 @@
 <Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:vm="using:JobTrack.ViewModels"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-        x:Class="JobTrack.Views.MainWindow"
+        xmlns:vm="clr-namespace:JobTrack.ViewModels"
+        xmlns:models="clr-namespace:JobTrack.Models"
+        mc:Ignorable="d"
+        x:Class="JobTrack.MainWindow"
         x:DataType="vm:MainWindowViewModel"
-        Icon="/Assets/avalonia-logo.ico"
-        Title="JobTrack">
+        Width="700"
+        Height="500"
+        Title="JobTrack - Bewerbungs Tracker">
 
-    <Design.DataContext>
-        <!-- This only sets the DataContext for the previewer in an IDE,
-             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
-        <vm:MainWindowViewModel/>
-    </Design.DataContext>
+    <Grid Margin="20">
+        <StackPanel Spacing="12">
 
-    <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <!-- Überschrift -->
+            <TextBlock Text="Meine Bewerbungen"
+                       FontSize="24"
+                       FontWeight="Bold"/>
 
+            <!-- Eingabefelder -->
+            <TextBox Watermark="Firmenname"
+                     Text="{Binding NewCompanyName}" />
+
+            <TextBox Watermark="Position"
+                     Text="{Binding NewPosition}" />
+
+            <!-- Speichern-Button -->
+            <Button Content="Bewerbung speichern"
+                    Click="SaveApplication_Click" />
+
+            <!-- Liste der Bewerbungen -->
+            <ListBox ItemsSource="{Binding Applications}">
+                <ListBox.ItemTemplate>
+                    <DataTemplate x:DataType="models:JobApplication">
+                        <Border Padding="10"
+                                Margin="5"
+                                BorderThickness="1">
+                            <StackPanel Spacing="4">
+                                <TextBlock Text="{Binding CompanyName}"
+                                           FontSize="16"
+                                           FontWeight="Bold"/>
+                                <TextBlock Text="{Binding Position}" />
+                                <TextBlock Text="{Binding Status}" />
+                            </StackPanel>
+                        </Border>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+
+        </StackPanel>
+    </Grid>
 </Window>

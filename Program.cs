@@ -1,29 +1,19 @@
 ﻿using System;
-using JobTrack.Data;
+using Avalonia;
 
-Console.WriteLine("Starte Datenbank...");
+namespace JobTrack;
 
-using var db = new AppDbContext();
-
-db.Database.EnsureCreated();
-
-var application = new JobTrack.Models.JobApplication
+internal class Program
 {
-    CompanyName = "ExampleAG",
-    Position = "Junior Software Developer",
-    Status = "Offen",
-    Notes = "TestBewerbung"
-};
+    [STAThread]
+    public static void Main(string[] args)
+    {
+        BuildAvaloniaApp()
+            .StartWithClassicDesktopLifetime(args);
+    }
 
-db.JobApplications.Add(application);
-db.SaveChanges();
-
-foreach (var job in db.JobApplications)
-{
-    Console.WriteLine($"Firma: {job.CompanyName}");
-    Console.WriteLine($"Position: {job.Position}");
-    Console.WriteLine($"Status: {job.Status}");
-    Console.WriteLine("----------------------------");
+    public static AppBuilder BuildAvaloniaApp()
+        => AppBuilder.Configure<App>()
+            .UsePlatformDetect()
+            .LogToTrace();
 }
-
-Console.WriteLine("Datenbank erstellt oder bereits vorhanden.");
